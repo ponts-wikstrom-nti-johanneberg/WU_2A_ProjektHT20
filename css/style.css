@@ -17,34 +17,90 @@
 }
 
 #grid_wrapper_nav {
-    position: sticky;
+    position: fixed;
+    display: grid;
     top: 0px;
     width: 100vw;
     height: 75px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 75px;
     grid-template-areas: 
     "nlo nli";
+    opacity: 0.4;
 }
 
 .nav_logga {
     grid-area: nlo;
-    background: salmon;
+    background: lightgrey;
 }
 
 .nav_link {
     grid-area: nli;
-    background: orange;
+    background: lightgrey;
+}
+
+#link_list {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 header {
     grid-area: he;
     background: green;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/raw_meat.jpg");
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#raw_meat_main {
+    width: 100%;
+    height: auto;
+}
+
+.text_over_img_main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#h1_main_img {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 70px;
+    color: lightgray;
+}
+
+#h3_main_img {
+    position: relative;
+    top: 40px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: lightgray;
+    font-size: 25px;
 }
 
 .inner_wrapper_main {
     grid-area: ma;
-    background: blue;
+    background: white;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -55,25 +111,123 @@ header {
 
 #article_1 {
     grid-area: a1;
-    background: green;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: dotted lightgray;
+    font-family: Arial Narrow, sans-serif;
+}
+
+#article_1_ot {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #article_2 {
     grid-area: a2;
-    background: cyan;
+    height: 300px;
+    width: 350px;
+    position: relative;
+    top: -100px;
+    left: 742px;
+    border: dotted lightgray;
+    text-align: center;
+    font-family: Arial Narrow, sans-serif;
+}
+
+#article_2_oo {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #article_3 {
     grid-area: a3;
-    background: yellow;
+    height: 300px;
+    width: 350px;
+    position: relative;
+    top: 0px;
+    left: 150px;
+    border: dotted lightgray;
+    text-align: center;
+    font-family: Arial Narrow, sans-serif;
+}
+
+#article_3_liok {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #article_4 {
     grid-area: a4;
-    background: red;
+    height: 325px;
+    width: 300px;
+    position: relative;
+    top: -250px;
+    left: 800px;
+    border: dotted lightgray;
+    text-align: center;
+    font-family: Arial Narrow, sans-serif;
+}
+
+#article_4_kih {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#kocken_i_huset {
+    width: 100%;
+    height: 91%;
 }
 
 footer {
     grid-area: fo;
     background: darkslategrey;
+}
+
+#article1 {
+    height: 100px;
+    width: 150px;
+    position: relative;
+    left: 200px;
+    top: 50px;
+    color: lightgray;
+    font-family: Arial Narrow, sans-serif;
+}
+
+#article1_rtr {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#article2 {
+    height: 100px;
+    width: 150px;
+    position: relative;
+    left: 600px;
+    top: -50px;
+    color: lightgray;
+    font-family: Arial Narrow, sans-serif;
+}
+
+#article2_hh {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#article3 {
+    height: 100px;
+    width: 150px;
+    position: relative;
+    left: 1000px;
+    top: -150px;
+    color: lightgray;
+    font-family: Arial Narrow, sans-serif;
+}
+
+#article3_fo {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#no_signal {
+    font-size: 150px;
+    text-align: center;
 }
