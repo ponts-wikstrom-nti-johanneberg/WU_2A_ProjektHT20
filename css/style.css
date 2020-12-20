@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
@@ -8,12 +10,12 @@
     display:grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 728px 1092px 243px;
     grid-template-areas: 
-    "he he"
-    "ma ma"
-    "fo fo";
+    "he"
+    "ma"
+    "fo";
 }
 
 #grid_wrapper_nav {
@@ -26,17 +28,22 @@
     grid-template-rows: 75px;
     grid-template-areas: 
     "nlo nli";
-    opacity: 0.4;
 }
 
 .nav_logga {
     grid-area: nlo;
-    background: lightgrey;
+    background: lightgray;
+    background-color: rgba(211, 211, 211, 0.4);
+}
+
+#logga {
+    width: auto;
+    height: 75px;
 }
 
 .nav_link {
     grid-area: nli;
-    background: lightgrey;
+    background-color: rgba(211, 211, 211, 0.4);
 }
 
 #link_list {
@@ -55,7 +62,7 @@ a {
     color: black;
 }
 
-header {
+.header_main {
     grid-area: he;
     background: green;
     display: flex;
@@ -230,4 +237,189 @@ footer {
 #no_signal {
     font-size: 150px;
     text-align: center;
+}
+
+.grid_wrapper_meny {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1000px 243px;
+    grid-template-areas: 
+    "heme"
+    "mame"
+    "fome";
+}
+
+#header_meny {
+    grid-area: heme;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#h1_meny {
+    font-family: 'Lobster Two', cursive;
+}
+
+.inner_wrapper_meny {
+    grid-area: mame;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a1me" 
+    "a2me"
+    "a3me"
+    "a4me";
+    padding: 100px;
+}
+
+.h2_article_meny {
+    font-family: 'Lobster Two', cursive;
+}
+
+.article_meny_ul {
+    font-family: 'Lobster Two', cursive;
+    position: relative;
+    top: 10px;
+    left: -150px;
+    list-style-type: none;
+}
+
+.article_ul_pris {
+    font-family: 'Lobster Two', cursive;
+    position: relative;
+    top: -130px;
+    left: 150px;
+    list-style-type: none;
+}
+
+#article001 {
+    grid-area: a1me;
+    text-align: center;
+    padding: 15px;
+    height: 250px;
+}
+
+#article002 {
+    grid-area: a2me;
+    text-align: center;
+    padding: 15px;
+    height: 250px;
+}
+
+#article003 {
+    grid-area: a3me;
+    text-align: center;
+    padding: 15px;
+    height: 250px;
+}
+
+#article004 {
+    grid-area: a4me;
+    text-align: center;
+    padding: 15px;
+    height: 250px;
+}
+
+#footer_meny {
+    grid-area: fome;
+    background: darkslategray;
+}
+
+#grid_wrapper_ko {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 400px 243px;
+    grid-template-areas: 
+    "heko"
+    "mako"
+    "foko";
+}
+
+#header_ko {
+    grid-area: heko;
+    display: flex;
+    background: darkslategray;
+    align-items: center;
+    padding: 75px;
+}
+
+#h1_ko {
+    color: lightgray;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#inner_wrapper_ko {
+    grid-area: mako;
+    display: flex;
+    width: 100vw;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "a1ko"
+    "a2ko"
+    "a3ko";
+    justify-content: space-around;
+    align-items: center;
+}
+
+#article01 {
+    grid-area: a1ko;
+    height: 300px;
+    width: 300px;
+}
+
+#h2_ko_ko {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#ko_ul_a1 {
+    list-style-type: none;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#article02 {
+    grid-area: a2ko;
+    height: 300px;
+    width: 300px;
+}
+
+#h2_ot_ko {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#ko_ul_a2 {
+    list-style-type: none;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#article03 {
+    grid-area: a3ko;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
+
+#h2_ka_ko {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#bild_po_karta {
+    width: 100%;
+    height: auto;
+}
+
+#footer_ko {
+    grid-area: foko;
+    background: darkslategray;
 }
